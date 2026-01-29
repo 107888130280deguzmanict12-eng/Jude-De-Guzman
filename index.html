@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jude Rada De Guzman | Developer Portfolio</title>
+
+    <style>
+        * .contact {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact-email {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 24px;
+  background: #0072ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+         .profile-pic {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid rgba(255,255,255,0.8);
+  box-shadow: 0 0 25px rgba(0,198,255,0.6);
+}
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            animation: fadeIn 2s ease;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .hero p {
+            margin: 10px 0 20px;
+            opacity: 0.8;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 30px;
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+            transition: transform 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* SKILLS */
+        .skill-box {
+            margin-bottom: 20px;
+        }
+
+        .skill-title {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .skill-bar {
+            width: 100%;
+            height: 12px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .skill-fill {
+            height: 100%;
+            width: 0;
+            border-radius: 10px;
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+            animation: fillBar 2s forwards;
+        }
+
+        /* PROJECTS */
+        .project-card {
+            background: rgba(255,255,255,0.1);
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.3);
+            margin-top: 40px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fillBar {
+            from { width: 0; }
+            to { width: var(--level); }
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+
+</head>
+<section class="contact">
+  <h2>Contact Me</h2>
+  <p>Email me anytime:</p>
+
+  <a href="mailto:107888130280.deguzman.ict12@gmail.com" class="contact-email">
+    107888130280.deguzman.ict12@gmail.com
+  </a>
+</section>
+<body>
+
+   <header class="hero">
+    <img src="jude.jpg" alt="Jude Rada De Guzman" class="profile-pic">
+
+    <h1>Jude Rada De Guzman</h1>
+    <p>ICT Student • ICT 1-C • Future Developer</p>
+    <a href="#projects" class="btn">View My Work</a>
+</header>
+
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p style="text-align:center;">
+            I am an ICT student passionate about web development, IoT systems,
+            and smart technologies. I enjoy building projects using HTML, CSS,
+            Node.js, and microcontrollers like ESP8266.
+        </p>
+    </section>
+
+    <!-- SKILL PROFICIENCY -->
+    <section class="skills">
+        <h2>Skill Proficiency</h2>
+
+        <div class="skill-box">
+            <div class="skill-title">
+                <span>HTML</span><span>70%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-fill" style="--level:70%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <div class="skill-title">
+                <span>CSS</span><span>76%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-fill" style="--level:76%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <div class="skill-title">
+                <span>JavaScript</span><span>65%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-fill" style="--level:65%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <div class="skill-title">
+                <span>Node.js</span><span>60%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-fill" style="--level:60%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <div class="skill-title">
+                <span>ESP8266 / IoT</span><span>75%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-fill" style="--level:75%;"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>Smart Trash Bin</h3>
+            <p>
+                RFID-based smart trash bin with load cell monitoring
+                and web dashboard. in progress...
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Developer Portfolio</h3>
+            <p>
+                A modern developer portfolio created using HTML and CSS.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Jude Rada De Guzman • ICT 1-C</p>
+    </footer>
+
+</body>
+</html>
